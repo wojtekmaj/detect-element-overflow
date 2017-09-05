@@ -1,0 +1,36 @@
+{
+  "name": "detect-element-overflow",
+  "version": "0.0.1-alpha",
+  "description": "A function that tells you whether a given element is overflowing its container or not. Useful for creating dropdowns and tooltips.",
+  "main": "src/entry.js",
+  "es6": "src/entry.js",
+  "scripts": {
+    "build": "babel src -d build --ignore **/__tests__",
+    "prepublishOnly": "npm run build",
+    "test": "npm run test-eslint",
+    "test-eslint": "eslint ./src"
+  },
+  "keywords": [
+    "overflow",
+    "collision"
+  ],
+  "author": {
+    "name": "Wojciech Maj",
+    "email": "kontakt@wojtekmaj.pl"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.6.0",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wojtekmaj/detect-element-overflow.git"
+  }
+}
