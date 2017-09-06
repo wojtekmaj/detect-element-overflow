@@ -1,6 +1,6 @@
 {
   "name": "detect-element-overflow",
-  "version": "0.0.1-alpha",
+  "version": "1.0.0",
   "description": "A function that tells you whether a given element is overflowing its container or not. Useful for creating dropdowns and tooltips.",
   "main": "src/entry.js",
   "es6": "src/entry.js",
