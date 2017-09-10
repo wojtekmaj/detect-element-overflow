@@ -1,4 +1,4 @@
-const detectCollisions = (element, container) => ({
+const detectElementOverflow = (element, container) => ({
   get collidedTop() {
     return element.getBoundingClientRect().top < container.getBoundingClientRect().top;
   },
@@ -25,4 +25,4 @@ const detectCollisions = (element, container) => ({
   },
 });
 
-export default detectCollisions;
+export default detectElementOverflow;
