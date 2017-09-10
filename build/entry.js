@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var detectCollisions = function detectCollisions(element, container) {
+var detectElementOverflow = function detectElementOverflow(element, container) {
   return {
     get collidedTop() {
       return element.getBoundingClientRect().top < container.getBoundingClientRect().top;
@@ -32,4 +32,4 @@ var detectCollisions = function detectCollisions(element, container) {
   };
 };
 
-exports.default = detectCollisions;
+exports.default = detectElementOverflow;
