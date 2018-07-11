@@ -6,8 +6,8 @@
   "es6": "src/entry.js",
   "scripts": {
     "build": "babel src -d dist --ignore __tests__",
-    "prepublishOnly": "npm run build",
-    "test": "npm run test-eslint",
+    "prepublishOnly": "yarn run build",
+    "test": "yarn run test-eslint",
     "test-eslint": "eslint ./src"
   },
   "keywords": [
