@@ -1,7 +1,6 @@
 {
   "presets": [
-    "env",
-    "stage-2"
+    "env"
   ],
   "plugins": [
     "transform-es2015-modules-commonjs"
