@@ -1,27 +1,29 @@
+const getRect = element => element.getBoundingClientRect();
+
 const detectElementOverflow = (element, container) => ({
   get collidedTop() {
-    return element.getBoundingClientRect().top < container.getBoundingClientRect().top;
+    return getRect(element).top < getRect(container).top;
   },
   get collidedBottom() {
-    return element.getBoundingClientRect().bottom > container.getBoundingClientRect().bottom;
+    return getRect(element).bottom > getRect(container).bottom;
   },
   get collidedLeft() {
-    return element.getBoundingClientRect().left < container.getBoundingClientRect().left;
+    return getRect(element).left < getRect(container).left;
   },
   get collidedRight() {
-    return element.getBoundingClientRect().right > container.getBoundingClientRect().right;
+    return getRect(element).right > getRect(container).right;
   },
   get overflowTop() {
-    return container.getBoundingClientRect().top - element.getBoundingClientRect().top;
+    return getRect(container).top - getRect(element).top;
   },
   get overflowBottom() {
-    return element.getBoundingClientRect().bottom - container.getBoundingClientRect().bottom;
+    return getRect(element).bottom - getRect(container).bottom;
   },
   get overflowLeft() {
-    return container.getBoundingClientRect().left - element.getBoundingClientRect().left;
+    return getRect(container).left - getRect(element).left;
   },
   get overflowRight() {
-    return element.getBoundingClientRect().right - container.getBoundingClientRect().right;
+    return getRect(element).right - getRect(container).right;
   },
 });
 
