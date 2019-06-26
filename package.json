@@ -6,9 +6,9 @@
   "es6": "src/entry.js",
   "scripts": {
     "build": "babel src -d dist --ignore __tests__",
-    "prepublishOnly": "yarn run build",
-    "test": "yarn run test-eslint",
-    "test-eslint": "eslint src/ --ext .jsx,.js"
+    "lint": "eslint src/ --ext .jsx,.js",
+    "prepublishOnly": "yarn build",
+    "test": "yarn lint"
   },
   "keywords": [
     "collision",
@@ -24,9 +24,9 @@
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
-    "eslint": "^5.15.0",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0"
+    "eslint-plugin-import": "^2.18.0"
   },
   "files": [
     "LICENSE",
