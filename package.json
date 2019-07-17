@@ -6,8 +6,9 @@
   "es6": "src/index.js",
   "scripts": {
     "build": "babel src -d dist --ignore __tests__",
+    "clean": "rimraf dist",
     "lint": "eslint src/ --ext .jsx,.js",
-    "prepublishOnly": "yarn build",
+    "prepublishOnly": "yarn clean && yarn build",
     "test": "yarn lint"
   },
   "keywords": [
@@ -26,7 +27,8 @@
     "@babel/preset-env": "^7.5.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.18.0"
+    "eslint-plugin-import": "^2.18.0",
+    "rimraf": "^2.6.3"
   },
   "files": [
     "LICENSE",
