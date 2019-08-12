@@ -1,4 +1,4 @@
-const getRect = element => element.getBoundingClientRect();
+const getRect = (element) => element.getBoundingClientRect();
 
 const detectElementOverflow = (element, container) => ({
   get collidedTop() {
