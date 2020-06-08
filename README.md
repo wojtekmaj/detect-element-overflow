@@ -20,7 +20,7 @@ Detect-Element-Overflow returns an object with getter functions described below.
 |collidedTop|Whether or not child element collided with the top parent's border.|`true`|
 |collidedBottom|Whether or not child element collided with the bottom parent's border.|`true`|
 |collidedLeft|Whether or not child element collided with the left parent's border.|`true`|
-|collidedRight|Whether or not child element collided with the left parent's border.|`true`|
+|collidedRight|Whether or not child element collided with the right parent's border.|`true`|
 |overflowTop|How many pixels of child have crossed top parent's border. Negative values specify how many pixels are between the child and the top parent's border.|`20`, `-15`|
 |overflowBottom|How many pixels of child have crossed bottom parent's border. Negative values specify how many pixels are between the child and the bottom parent's border.|`20`, `-15`|
 |overflowLeft|How many pixels of child have crossed left parent's border. Negative values specify how many pixels are between the child and the left parent's border.|`20`, `-15`|
