@@ -44,5 +44,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/wojtekmaj/detect-element-overflow.git"
-  }
+  },
+  "funding": "https://github.com/wojtekmaj/detect-element-overflow?sponsor=1"
 }
