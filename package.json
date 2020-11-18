@@ -12,7 +12,7 @@
     "build-umd": "BABEL_ENV=production-umd babel src -d dist/umd --ignore \"**/*.spec.js\"",
     "clean": "rimraf dist",
     "lint": "eslint src/ --ext .jsx,.js",
-    "prepublishOnly": "yarn clean && yarn build",
+    "prepack": "yarn clean && yarn build",
     "test": "yarn lint"
   },
   "keywords": [
