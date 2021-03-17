@@ -33,6 +33,10 @@
     "eslint-config-wojtekmaj": "^0.5.0",
     "rimraf": "^3.0.0"
   },
+  "resolutions": {
+    "rimraf@2.6.3": "^2.6.3",
+    "semver@7.0.0": "^7.0.0"
+  },
   "files": [
     "LICENSE",
     "README.md",
