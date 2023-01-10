@@ -1,8 +1,8 @@
-function getRect(element) {
+function getRect(element: HTMLElement) {
   return element.getBoundingClientRect();
 }
 
-export default function detectElementOverflow(element, container) {
+export default function detectElementOverflow(element: HTMLElement, container: HTMLElement) {
   return {
     get collidedTop() {
       return getRect(element).top < getRect(container).top;
