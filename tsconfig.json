@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "strict": true,
+    "target": "es5"
+  },
+  "include": ["src"]
+}
