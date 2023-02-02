@@ -12,7 +12,7 @@
     "build-esm": "tsc --project tsconfig.build.json --outDir dist/esm --module esnext",
     "build-cjs": "tsc --project tsconfig.build.json --outDir dist/cjs --module commonjs",
     "clean": "rimraf dist",
-    "lint": "eslint src",
+    "lint": "eslint .",
     "postinstall": "husky install",
     "prepack": "yarn clean && yarn build",
     "prettier": "prettier --check . --cache",
