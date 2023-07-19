@@ -9,7 +9,7 @@ A function that tells you whether a given element is overflowing its container o
 - Install by executing `npm install detect-element-overflow` or `yarn add detect-element-overflow`.
 - Import by adding `import detectElementOverflow from 'detect-element-overflow'`.
 - Do stuff with it!
-  ```js
+  ```ts
   const collisions = detectElementOverflow(child, parent);
   ```
 
