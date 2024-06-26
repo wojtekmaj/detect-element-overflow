@@ -4,28 +4,28 @@ function getRect(element: HTMLElement) {
 
 export default function detectElementOverflow(element: HTMLElement, container: HTMLElement) {
   return {
-    get collidedTop() {
+    get collidedTop(): boolean {
       return getRect(element).top < getRect(container).top;
     },
-    get collidedBottom() {
+    get collidedBottom(): boolean {
       return getRect(element).bottom > getRect(container).bottom;
     },
-    get collidedLeft() {
+    get collidedLeft(): boolean {
       return getRect(element).left < getRect(container).left;
     },
-    get collidedRight() {
+    get collidedRight(): boolean {
       return getRect(element).right > getRect(container).right;
     },
-    get overflowTop() {
+    get overflowTop(): number {
       return getRect(container).top - getRect(element).top;
     },
-    get overflowBottom() {
+    get overflowBottom(): number {
       return getRect(element).bottom - getRect(container).bottom;
     },
-    get overflowLeft() {
+    get overflowLeft(): number {
       return getRect(container).left - getRect(element).left;
     },
-    get overflowRight() {
+    get overflowRight(): number {
       return getRect(element).right - getRect(container).right;
     },
   };
