@@ -5,7 +5,7 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@biomejs/biome@npm:^1.8.3":
+"@biomejs/biome@npm:1.8.3":
   version: 1.8.3
   resolution: "@biomejs/biome@npm:1.8.3"
   dependencies:
@@ -194,7 +194,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "detect-element-overflow@workspace:."
   dependencies:
-    "@biomejs/biome": "npm:^1.8.3"
+    "@biomejs/biome": "npm:1.8.3"
     husky: "npm:^9.0.0"
     rimraf: "npm:^6.0.0"
     typescript: "npm:^5.5.2"
