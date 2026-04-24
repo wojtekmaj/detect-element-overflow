@@ -50,5 +50,5 @@
     "url": "git+https://github.com/wojtekmaj/detect-element-overflow.git"
   },
   "funding": "https://github.com/wojtekmaj/detect-element-overflow?sponsor=1",
-  "packageManager": "yarn@4.14.0"
+  "packageManager": "yarn@4.14.1"
 }
